@@ -14,11 +14,13 @@ function Cart() {
         <div><CheckoutButton /></div>
       </div>
       {cart.length === 0 ? (
-        <p className='text-4xl m-32 text-center'>Please add items to cart</p>
+        <div className='pb-72 text-center'>
+        <p className='text-4xl m-32 text-center font-bold'>........Please add items to cart.........</p>
+        </div>
       ) : (
         <ul> 
-          {cart.map((product) => ( // Removed "index" from the map function
-            <li className='list-none' key={product.id}> {/* Changed "index" to "product.id" as the key */}
+          {cart.map((product) => ( 
+            <li className='list-none' key={product.id}>
               <div className="mt-8">
                 <div className="flex flex-col md:flex-row border-b border-gray-400 py-4">
                   <div className="flex-shrink-0">
