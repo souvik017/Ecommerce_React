@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 function SmallCard({
   link="https://fakestoreapi.com/products?limit=5",
-  gap="2.5"
+  gap="2"
 }) {
   const [Product, setProduct] = useState([]);
 
