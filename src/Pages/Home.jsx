@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from '../Commponents/Carousel'
 import SmallCard from '../Commponents/SmallCard'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 function Home() {
   const images = [
     "https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg",
@@ -9,6 +10,7 @@ function Home() {
     "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/ffeb169a27907387.jpg?q=20",
 
   ]  
+  const navigate = useNavigate();
   return (
     <>
     <div>
@@ -22,7 +24,9 @@ function Home() {
     <div className='my-1 mx-12'>
       <div  className='flex text-3xl mb-4 justify-between pr-16 pl-20'>
       <p className='font-bold mb-2'>Our Best Products</p>
-      <Link to="/Product"><button className="px-4 py-2 text-xl text-blue-500 mr-2 hover:text-white hover:bg-blue-500 rounded cursor-pointer">Veiw All</button></Link>
+      <button onClick={() => navigate("/Product")}
+       className="px-4 py-2 text-xl text-blue-500 mr-2 hover:text-white hover:bg-blue-500 rounded cursor-pointer">
+        Veiw All</button>
       </div>
       <div className='pr-16 pl-20'>
       <SmallCard
