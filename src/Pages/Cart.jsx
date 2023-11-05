@@ -14,7 +14,7 @@ function Cart() {
         <div><CheckoutButton /></div>
       </div>
       {cart.length === 0 ? (
-        <p className='text-4xl m-32'>Please add items to cart</p>
+        <p className='text-4xl m-auto w-screen'>Please add items to cart</p>
       ) : (
         <ul> 
           {cart.map((product) => ( // Removed "index" from the map function
