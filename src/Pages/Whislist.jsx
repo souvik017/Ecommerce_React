@@ -6,13 +6,13 @@ function Wishlist() {
   const list = useSelector((state) => state.wishlist.wishlist);
   const dispatch = useDispatch();
   return (
-    <div className="container mx-28 px-4 py-8">
+    <div className=" mx-20 px-4 py-8 ">
       <div className="flex flex-col md:flex-row md:justify-between md:items-center">
         <div><h1 className="text-2xl font-bold my-4">Wishlist</h1></div>
       </div>
       {list.length === 0 ? (
-        <div className='pb-72 text-center'>
-        <p className='text-4xl m-32 text-center font-bold'>........Please add items to Wishlist.......</p>
+       <div className='pb-72 text-center'>
+        <p className='text-4xl m-32 font-bold'>........Please add items to Wishlist.......</p>
         </div>
       ) : (
         <ul> 

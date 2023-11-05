@@ -1,21 +1,21 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { increaseItemQuantity, remove, decreaseItemQuantity } from "../Store/CartSlice";
-import CheckoutButton from '../Commponents/checkoutBtn'; // Corrected the import path
+import CheckoutButton from '../Commponents/checkoutBtn'; 
 
 function Cart() {
   const { cart, itemQuantities } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   return (
-    <div className="container mx-4 md:mx-28 px-4 py-8"> 
+    <div className=" mx-20 px-4 py-8 overflow-hidden"> 
       <div className="flex flex-col md:flex-row md:justify-between md:items-center">
         <div><h1 className="text-2xl font-bold my-4">My Cart</h1></div>
         <div><CheckoutButton /></div>
       </div>
       {cart.length === 0 ? (
         <div className='pb-72 text-center'>
-        <p className='text-4xl m-32 text-center font-bold'>........Please add items to cart.........</p>
+        <p className='text-4xl m-32 font-bold'>........Please add items to cart.........</p>
         </div>
       ) : (
         <ul> 
