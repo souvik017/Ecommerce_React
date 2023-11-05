@@ -41,7 +41,7 @@ function Home() {
         <p className='font-semibold'>Sign Up and Save</p>
         <p className='text-zinc-500'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
         </div>
-        <Link to="/Products"><button
+        <Link to="/Product"><button
         className='bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-2'
         >Shop Now</button>
         </Link>
@@ -52,7 +52,7 @@ function Home() {
         <p className='font-semibold' >Sign Up and Save</p>
         <p className='text-zinc-500'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
         </div>
-        <Link to="/Products"><button
+        <Link to="/Product"><button
         className='bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-2'
         >Shop Now</button>
         </Link>
@@ -67,7 +67,7 @@ function Home() {
         <p className='font-semibold'>Sign Up and Save</p>
         <p className='text-zinc-500'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
         </div>
-        <Link to="/Products"><button
+        <Link to="/Product"><button
         className='bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-2'
         >Shop Now</button>
         </Link>
@@ -78,7 +78,7 @@ function Home() {
         <p className='font-semibold' >Sign Up and Save</p>
         <p className='text-zinc-500'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
         </div>
-        <Link to="/Products"><button
+        <Link to="/Product"><button
         className='bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-2'
         >Shop Now</button>
         </Link>
