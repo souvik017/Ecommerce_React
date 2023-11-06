@@ -31,10 +31,10 @@ function Login() {
         <h2 className="text-2xl font-semibold mb-6">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="username" className="block text-gray-600 font-bold">Username:</label>
+            <label htmlFor="username" className="block text-gray-600 font-bold">Email:</label>
             <input
               type="text"
-              id="username"
+              id="Email"
               required
               autoComplete='off'
               value={email}
